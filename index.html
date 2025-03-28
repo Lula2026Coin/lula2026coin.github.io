@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LulaPT2026 (LPT26) - A Revolução Cripto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #1a1a1a;
+            color: white;
+            padding: 20px;
+        }
+        h1 { color: #f44336; }
+        .counter {
+            font-size: 2em;
+            margin-top: 20px;
+            padding: 10px;
+            border: 2px solid white;
+            display: inline-block;
+        }
+        .highlight { color: #ffcc00; }
+    </style>
+</head>
+<body>
+    <h1>LulaPT2026 (LPT26) - A Revolução Cripto!</h1>
+    <p>O futuro da economia brasileira está aqui! 🚀💰</p>
+    <p><strong>🔥 Lançamento em breve! 🔥</strong></p>
+    <div class="counter" id="countdown"></div>
+    <p>Junte-se ao movimento agora!</p>
+    <p><a href="#">Telegram</a> | <a href="#">Twitter/X</a> | <a href="#">Whitepaper</a></p>
+
+    <script>
+        function countdownTimer() {
+            const launchDate = new Date("April 30, 2025 12:00:00").getTime();
+            setInterval(function() {
+                const now = new Date().getTime();
+                const timeLeft = launchDate - now;
+                if (timeLeft > 0) {
+                    const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+                    const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+                    const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+                    document.getElementById("countdown").innerHTML = `⏳ ${days}d ${hours}h ${minutes}m ${seconds}s`;
+                } else {
+                    document.getElementById("countdown").innerHTML = "🚀 Lançado!";
+                }
+            }, 1000);
+        }
+        countdownTimer();
+    </script>
+</body>
+</html>
